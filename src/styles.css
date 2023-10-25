@@ -1,0 +1,302 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+/* *{
+    border: 2px solid red;
+} */
+
+/* baner png */
+.banner_section::after {
+    background-image: url(./assets/images/banner-shape-pink.svg);
+    height: 100px;
+    margin-top: 0px;
+}
+.bred_crumb::after {
+    background-image: url(./assets/images/banner-shape-pink.svg);
+}
+
+/* header toggle button */
+.toggle-bar::after,.toggle-bar::before {
+    
+    background: #d93d79;
+}
+.toggle-bar {
+    border-top: 4px solid #d93d79;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.dark_btn {
+    background-color: #d93d79;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color:black;
+}
+.navbar-expand-lg .navbar-nav .has_dropdown:hover>a,
+.navbar-expand-lg .navbar-nav .has_dropdown:hover>.drp_btn {
+    color: #d93d79;
+}
+.navbar-expand-lg .navbar-nav .has_dropdown .sub_menu ul li a:hover {
+    color: #d93d79;
+}
+.navbar-expand-lg .navbar-nav .has_dropdown .sub_menu ul li a::before {
+    border: 2px solid #d93d79;
+}
+/*------Header Btn Animation------*/
+@keyframes pulse-blue-small-sm {
+	0% {
+		box-shadow: 0 0 0 0 rgba(217, 61, 121, 0.7);
+	}
+
+	100%,
+	30% {
+		box-shadow: 0 0 0 12px transparent
+	}
+}
+
+@keyframes pulse-blue-medium-sm {
+	0% {
+		box-shadow: 0 0 0 0 rgba(217, 61, 121, 0.4);
+	}
+
+	100%,
+	30% {
+		box-shadow: 0 0 0 20px transparent
+	}
+}
+
+
+.white_btn {
+    padding: 14px 40px;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    /* background-color: var(--bg-white); */
+    /* background-color: var(--purple); */
+    background-color: #d93d79;
+    font-weight: 600;
+}
+.white_btn::before{
+    background-color: #d93d79 !important;
+}
+h2 span{
+    color: black !important;
+}
+
+/* header.fix_style  */
+header.fix_style{
+    background-color: white !important;
+}
+
+/* banner section*/
+.banner_section{
+    padding-top: 120px;
+}
+
+.banner_section .banner_image img {
+    max-width: 75%;
+}
+.banner_section .banner_text h2 {
+    font-size: 27px;
+    color: var(--dark-purple);
+    letter-spacing: 0px;
+    font-weight: 600;
+    padding: 0px 0 10px 0;
+}
+.section_title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-purple);
+}
+/* bener section */
+.bred_crumb .bred_text h1 {
+    color: #d93d79;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* about img */
+.app_solution_section .app_images li:first-child {
+    width: 85%;
+}
+/* icon  */
+.bi-check2-circle {
+
+    font-size: 25px;
+    color: green;
+}
+
+.bi-x-circle {
+
+    font-size: 25px;
+    color: red;
+}
+
+/* carousal card body */
+
+.card_body {
+    min-height: auto;
+    padding: 5rem;
+    border-radius: 2%;
+    background-color: #d93d79e0;
+    color: white;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+.icofont-quote-left{
+    font-size: xx-large;
+}
+.icofont-quote-right{
+    font-size: xx-large;
+   
+}
+/* footer links */
+footer .top_footer {
+    padding: 2% 2%; 
+}
+footer h3 {
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+/* signup / login */
+
+.signup_form form .form-group .form-control:focus {
+    color: black;
+    border-color: black;
+}
+.signup_section .top_part {
+    padding-bottom: 0;
+}
+
+/* contact form */
+
+
+.contact_page_section .contact_inner .contact_form form .form-group .form-control:focus{
+    color: black;
+    border-color: black;
+}
+
+
+.form-control{
+    border: 1px solid black !important;
+}
+
+/* pricing card  */
+
+
+.pricing_section .pricing_pannel .pricing_block .price {
+    color: #d93d79;
+}
+
+.pricing_section .pricing_pannel .pricing_block.highlited_block {
+    background-color: #d93d79b3;
+}
+
+.pricing_section .pricing_pannel .pricing_block {
+    min-height: auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    
+}
+.pricing_section .pricing_pannel .pricing_block .price {
+    margin: 0 0;
+    font-weight: 500;
+}
+.pricing_section .pricing_pannel .pricing_block .benifits li p {
+    margin-bottom: -4px;
+}
+/* login */
+/* .login{
+    position: absolute;
+
+} */
+/* signup */
+.signup_form {
+    width: 50%;
+    padding: 33px 10px;
+}
+@media screen and (max-width: 767px){
+    .signup_form {
+        width: 100%;
+        padding: 0 auto;
+    } 
+}
+/* newsletter  */
+
+.newsletter_box{
+    margin-bottom: 0;
+    padding-left: 35%;
+    background-color:var(--light-purple);
+  }
+  @media screen and (max-width: 992px){
+    .newsletter_box{
+        padding: 0 0;
+      }
+  }
+/*  contact*/
+.form-header h3{
+    color: rgb(217 61 121) !important;
+}
+@media (max-width: 768px){
+    .form-header h3{
+       font-size: 20px !important;
+    }
+}
+.form-container {
+   
+    background: #d93d79c4 !important;
+}
+.contact_page_section .contact_inner .contact_form {
+    padding: 30px 25px;
+}
+.contact_page_section .contact_inner .contact_form form .form-group .form-control {
+    height: 60px;
+    padding: 0px 5px;
+}
+  /* about */
+  .about_app_section .about_text .app_statstic {
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    gap: 3%;
+}
+.about_app_section .about_text .app_statstic li {
+    width: 211px;
+    padding-left: 50px;
+}
+/* footer top */
+footer .top_footer .social_media li a:hover {
+    color: #d93d79;
+}
+
+footer .top_footer {
+    /* background-color: #404041; */
+    background-color: #452c36;
+    padding: 6% 0%;
+}
+
+  /* footer botum img logo */
+  .footer_map{
+    width: 100%;
+    height: 100%;
+  }
+  footer .bottom_footer {
+    background-color: #ffffff;
+}
+
+  footer .bottom_footer a{
+    color: black;
+  }
+  footer .bottom_footer p{
+    color: black;
+  }
+  .footer-logo{
+    width: 20%;
+  }
+
+  
+  
